@@ -1,4 +1,4 @@
-SELECT day, SUM(assignments.id) as total_assignments
+SELECT day, COUNT(*) as total_assignments
 FROM assignments
 GROUP BY day
 ORDER BY day;
